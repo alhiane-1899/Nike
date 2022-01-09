@@ -61,6 +61,21 @@ h1, h2, h3, h4, h5, h6 {
     background-color: var(--orange-clr);
     color: var(--white-clr);
 }
+.heading {
+    text-align: center;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 4rem;
+}
+@media screen and (max-width: 768px) {
+    .heading {
+        font-size: 2rem;
+    }
+}
+.heading span {
+    color: var(--orange-clr);
+}
 /* end basic rules */
 /* start header */
 header {
@@ -125,7 +140,7 @@ header {
         top: 100%;
         left: -100%;
         width: 100%;
-        background-color: #EEEEEE;
+        background-color: #F9F9F9;
     }
     .navbar a {
         display: block;
@@ -259,8 +274,8 @@ header .icons a:hover {
 /* start services */
 .services-container {
     padding: 2rem;
-    background-color: #eee;
-    border: 2px solid var(--black-clr);
+    background-color: #F9F9F9;
+    border: 2px solid #eee;
     border-radius: .25rem;
 }
 .services-grid {
@@ -298,3 +313,75 @@ header .icons a:hover {
     margin: 20px 0 10px;
 }
 /* end services */
+/* start latest products */
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    grid-gap: 15px;
+}
+.product {
+    position: relative;
+    overflow: hidden;
+    background-color: #F9F9F9;
+    border: 2px solid #eee;
+    border-radius: .25rem;
+}
+.product .icons {
+    position: absolute;
+    top: .5rem;
+    left: -10rem;
+}
+.product:hover .icons {
+    left: .5rem;
+}
+.product .icons a {
+    display: block;
+    width: 50px;
+    height: 45px;
+    margin-bottom: .5rem;
+    background-color: var(--white-clr);
+    border: 1px solid var(--black-clr);
+    border-radius: .25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.25rem;
+    color: var(--black-clr);
+}
+.product .icons a:hover {
+    background-color: var(--orange-clr);
+    color: var(--white-clr);
+}
+.product-img {
+    height: 6rem;
+    transform: rotate(-35deg);
+    margin: 5rem auto;
+    display: flex;
+    filter: drop-shadow(0 .5rem 1rem rgba(0,0,0,.1));
+}
+.product:hover .product-img {
+    transform: rotate(-35deg) scale(1.2);
+}
+.product-info {
+    padding: 1rem;
+    text-align: center;
+}
+.product-name {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+.product-price {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: var(--black-clr);
+}
+.product-price span {
+    font-size: .85rem;
+    text-decoration: line-through;
+    color: var(--orange-clr);
+}
+.product-stars li {
+    color: var(--orange-clr);
+}
+/* end latest products */
