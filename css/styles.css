@@ -63,14 +63,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 .heading {
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-bottom: 2rem;
 }
 @media screen and (max-width: 768px) {
     .heading {
-        font-size: 2rem;
+        font-size: 1.7rem;
     }
 }
 .heading span {
@@ -443,3 +443,31 @@ header .icons a:hover {
     margin-bottom: 0;
 }
 /* end featured products */
+/* reviews section starts */
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    grid-gap: 15px;
+}
+.review {
+    padding: 1.5rem 2rem;
+    background-color: #F9F9F9;
+    border: 2px solid #eee;
+    text-align: center;
+}
+.review-writer-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+.review-writer {
+    font-size: 1.5rem;
+    margin: 20px 0 15px;
+}
+.review-stars {
+    margin-top: 15px;
+}
+.review-stars li  {
+    color: var(--orange-clr);
+}
+/* reviews section ends */
