@@ -471,3 +471,60 @@ header .icons a:hover {
     color: var(--orange-clr);
 }
 /* reviews section ends */
+/* newsletter section starts */
+.newsletter-container {
+    padding: 1.5rem;
+    background-color: #F9F9F9;
+    border: 2px solid #eee;
+    text-align: center;
+}
+.newsletter-container h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+.newsletter-container p {
+    width: 100%;
+    max-width: 45rem;
+    margin: 0 auto 25px;
+}
+.newsletter-container form {
+    width: 100%;
+    max-width: 35rem;
+    margin: 0 auto;
+    display: flex;
+    row-gap: 15px;
+}
+@media screen and (max-width: 576px) {
+    .newsletter-container form {
+        flex-direction: column;
+    }
+}
+.newsletter-container form input[type='email'],
+.newsletter-container form input[type='submit'] {
+    border: 1px solid var(--black-clr);
+    background-color: var(--white-clr);
+}
+.newsletter-container form input[type='email'] {
+    width: 100%;
+    padding: .5rem 15px;
+    font-size: 1rem;
+    color: var(--black-clr);
+}
+.newsletter-container form input[type='submit'] {
+    display: inline-block;
+    padding: .5rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+@media screen and (min-width: 576px) {
+    .newsletter-container form input[type='submit'] {
+        border-left: none;
+        font-size: 1.25rem;
+    }
+}
+.newsletter-container form input[type='submit']:hover {
+    background-color: var(--orange-clr);
+    color: var(--white-clr);
+}
+/* end section starts */
